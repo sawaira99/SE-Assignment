@@ -54,3 +54,42 @@ The process of evalution is that evalute metadata generated from datasets .Evalu
 AIMMx describe that we intend as a step towards furthering and modifying engineering support for AI development .Through AI development they providing standardized metadata for existing and utilize AI models . We envision that generating analyzable metadata for disparate and different  models is both the first and golden step towards managing models at scale and adapting existing mining software repositories techniques to AI models through AI models we adapt many success and many technical chance to support engineering system. AI models is one of the best success in software engineering of world. We should adapt it and get lots of adavantage from it.
 
 ****
+****
+# Paper 2
+****
+
+# **Better code, Better sharing on the need of analyzing Jupyter Notebook **
+
+#### Important Links:
+*Link to Paper:* 🔗  https://www.researchgate.net/publication/333745954_Better_Code_Better_SharingOn_the_Need_of_Analyzing_Jupyter_Notebooks
+#
+
+##### **AUTHORS**
+*Jiaweiwang, Li Li,Andras Zeller*
+
+##### **INTRODUCTION**
+Jupyter , An indirect acronym of 3 lamguages -Julia ,Python and R-Jupyter notebook is a client based intractive web application that allows users to create and share codes ,equations,visualisatioin as well as text. Students can also get benifits  from the line code to better understand  the concepts introduced in notebook.The notebook consider as a multilanguage intractive comnputing enviroment, which support 40+ programming language to its users. With jupyter notebook user can bring in data,code and prose in together to create an intractive computational story. Wether to analyse a collection of written text ,or develop engineering concept , Jupyter notebook can combine codes and explanations with the  intractivity of the application. This makes it handy tool for data scientist for streamlining end to end data science workflows. Developers may encounter the problem that notebooks do not behave as expected. Moreover jupyter notebook might also encourage poor coding practice. By and large the software engineering community has not yet proposed promising approaches to automatically analyze jupyter notebook contain.
+(1) Coad with poorly respect to the python style conversion.
+(2) Code with unused variables which are defined but never referenced.
+(3) Accessing, deprecated function.
+
+In this paper they argue to that community need to propose promising approaches to
+(1) enforce good coding styles.
+(2) Improve the quality and reliability of the code.
+(3) applied best practices for software quality and 
+(4) Ensure a good balance between text and code in jupyter notebooks
+
+
+##### **METHODOLOGY**
+
+Jupyter notebook was created to make it easier to show one's programming work ,and to let other join in. Jupyter notebook allows you to combine code , comments ,multimedia , and visualization in an intractive document - called a notebook , naturally - that can be shared , reused , and reworked. The quality of notebooks is extremely important. Their initial attempt towards checking the quality of codes for this purpose this paper includes some question and to answer these research questions , they resort to Github to harvest a dataset to support their empirical investigation. In this preliminary study , restriction is to analyze python based notebooks only. After removing dead links and duplicated links , we automatically collected 1,982 notable python _based notebooks covering various topics such as -  mathematics , signal processing ,natural language processing etc as research subject data. To facilitate the empirical investigation develop a set of python script to preprocess the datasets. The programs a jupyter notebook file as input and chain of code cells as output. Every code cell is associated with its explanatory text , execution output, and possible external python code. The external cide is prresented as independent python script (*.PY) initially the question was to check if the python code written in jupyter notebooks respect the python coding style. Because most of the jupyter notebook are provided for education, the code should be well aligned with recommended coding conventions so that the learners will not be misledton write python code with poor coding practices .Another question if unused variable are presented by the providers of jupyter notebooks. Unused variable are such variables that are defined in a code cell but are never used in that cell and its subsequent cells.If a variable is stored but not located ,we consider it as an unused variable and will flag it as such . By this following approach, experimentally find that 803 notebooks contain code with unused variables . As the last question if notable jupyter notebooks contain code accessing into deprecated functions of givin libraries .Again , because of the educational purpose , deprecated function should be also avoided by notebook contributors. Most people have their first exposure to jupyter notebook by way of a data visualization a shared notebook that includes a rendering of some dataset as graphic. Jupyter notebook lets you author visualization ,but also share them and allow intractive changes to the shared code and dataset .Jupyter notebook code isn't static ;it can be edited and re-run incrementally in real time.
+Simply we can say that the purpose of jupyter notebook is 
+➡️ Data Cleaning
+➡️ Statistical Modeling
+➡️ Training ML Model
+➡️ Data Visualisation .
+
+###### **CONCLUSION**
+Jupyter notebook originally developed for data science applications written in python , R ,and Julia jupyter notebook is useful in all kinds of ways for all kinds of projects. Jupyter notebooks are powerfull, versatile , shareable and provide the ability to perform data visualisation in the same environment  .Jupyter notebook allow data scientist to create and share their document from codes to full blown reports. according to experimental result prove that juypyter notebook are indeed in undated with poor and low coding practice. Motivated by these empirical results they presented to show their goals on the need of analyzing jupyter notebook. Appealing for software engineering community to pay more  attention and focus to the quality and reliability of jupyter notebook.
+
+****

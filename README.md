@@ -84,12 +84,73 @@ In this paper they argue to that community need to propose promising approaches 
 
 Jupyter notebook was created to make it easier to show one's programming work ,and to let other join in. Jupyter notebook allows you to combine code , comments ,multimedia , and visualization in an intractive document - called a notebook , naturally - that can be shared , reused , and reworked. The quality of notebooks is extremely important. Their initial attempt towards checking the quality of codes for this purpose this paper includes some question and to answer these research questions , they resort to Github to harvest a dataset to support their empirical investigation. In this preliminary study , restriction is to analyze python based notebooks only. After removing dead links and duplicated links , we automatically collected 1,982 notable python _based notebooks covering various topics such as -  mathematics , signal processing ,natural language processing etc as research subject data. To facilitate the empirical investigation develop a set of python script to preprocess the datasets. The programs a jupyter notebook file as input and chain of code cells as output. Every code cell is associated with its explanatory text , execution output, and possible external python code. The external cide is prresented as independent python script (*.PY) initially the question was to check if the python code written in jupyter notebooks respect the python coding style. Because most of the jupyter notebook are provided for education, the code should be well aligned with recommended coding conventions so that the learners will not be misledton write python code with poor coding practices .Another question if unused variable are presented by the providers of jupyter notebooks. Unused variable are such variables that are defined in a code cell but are never used in that cell and its subsequent cells.If a variable is stored but not located ,we consider it as an unused variable and will flag it as such . By this following approach, experimentally find that 803 notebooks contain code with unused variables . As the last question if notable jupyter notebooks contain code accessing into deprecated functions of givin libraries .Again , because of the educational purpose , deprecated function should be also avoided by notebook contributors. Most people have their first exposure to jupyter notebook by way of a data visualization a shared notebook that includes a rendering of some dataset as graphic. Jupyter notebook lets you author visualization ,but also share them and allow intractive changes to the shared code and dataset .Jupyter notebook code isn't static ;it can be edited and re-run incrementally in real time.
 Simply we can say that the purpose of jupyter notebook is 
+
 ➡️ Data Cleaning
+
 ➡️ Statistical Modeling
+
 ➡️ Training ML Model
+
 ➡️ Data Visualisation .
 
 ###### **CONCLUSION**
 Jupyter notebook originally developed for data science applications written in python , R ,and Julia jupyter notebook is useful in all kinds of ways for all kinds of projects. Jupyter notebooks are powerfull, versatile , shareable and provide the ability to perform data visualisation in the same environment  .Jupyter notebook allow data scientist to create and share their document from codes to full blown reports. according to experimental result prove that juypyter notebook are indeed in undated with poor and low coding practice. Motivated by these empirical results they presented to show their goals on the need of analyzing jupyter notebook. Appealing for software engineering community to pay more  attention and focus to the quality and reliability of jupyter notebook.
 
+****
+****
+# Paper 3
+****
+
+# **Mining Software Repositories While respecting Privacy**
+
+#### Important Links:
+*Link to Paper:* 🔗  https://jgbarah.github.io/presentations/research-privacy/
+*Link to Media:* 🔗  https://www.youtube.com/watch?v=O6er2YpE8XQ
+#
+##### **AUTHORS**
+*Jesus M.Gonzalez-Barahona*
+
+##### **CONFERENCE NAME**
+Mining Software Repositories Conference Eduactional Track  | June 29 th 2020
+
+##### **INTRODUCTION**
+In this paper the author write about the privacy and protection of data. First outline the motivation for this document, including the conceptual framework for traditioinoal humman subject research and ICT research stakeholder. Thier are two points through which we can analyze the privacy of data.
+(1) Legal requirements.
+(2)  Ethical requirements.
+IN this paper we discuss 5 ethical principle , the 3 from the Belmont report which are 1- respect for person 2- beneficiences 3- justice and an additional principle respect for law and public intrest.The ethical prespective is that bussiness have an obligation to conduct themselves in a way that treats each stakeholder group fairly .While recognizing the claims shareholders have to profit in exchange for putting their capital at risk ,the stakeholder perspective that holds ethics as the prominent decision rule.
+In software engineering field the ethical problem involve : the end product , the processing of developing that product , and the humman intractions in the development of the product and core concept like: informed consent - Scientific value, Beneficence, Confidentiality. This paper also includes some applicable law for the protection of data like General Data Protection Regulation (GDPR) and recommendations by national data protection agencies and other which are applicable in Europe Union and also in other jurisdictions. This paper includes the standard methods to operationalize these principle in the domain of research involving  information and communication tehnology: identification of stakeholder and informed consent ; balancining risk and benefits, faireness and equality ; transparacy,accountability, respectively.
+
+##### **METHODOLOGY**
+This conference is totally about the privacy and security of data that what it is and why it is important. So we can easily analyze this by legal and ethical requirement. Ethics are based on 3 fundamental principle.
+**1) Respect for person :-** People should be treated as autonomous. Researcher must respect that individuals should make their own informed decisions about whether to participate in search and individual must be provided with complete information about study.
+**2) Beneficence:-** Persons are treated in an ethical manner not only by respecting their decisioin and protecting them from harm , but also making effort to secure their well being. Such treatment falls under the principle of beneficence . Two general rules have been formulated (1) do not harm (2) maximize possible benefits and minimize possible harms.
+**3) Justice:-** It is the concept of fairness . Researchers designing traials should consider what is fair in term of requirements of participant and choice of location to conduct a trail. This issue is related to whon benefits from research and who bears the risk of research . Another way of conceiving the principle of justice is that equal ought to be treated equally. There is also some ethical issue in Software Engineering research like informed consent, scientific value, beneficence and confidentiality.
+
+Software repositories always contain personal information that can be mapped to individual. Therefore , that research using the dataset of an MSR can effect human subjects , requiring careful consideratioin  of ethics implication. It is sometime misunderstanding that analysis of publicaly available data in free from the requirements of ethics consideration.
+Legal requirements:- Data protection laws can also be enforced through data protection by design . Key GDPR principle , rules and requirements for the collection and processing of personal data . These types of key require technical and organizatioin controls and policies to secure personal data and provisions of security that are for ensure the confidentiality , integrity ,and availability of sysytem , networks , services and data.Data privacy and security also concern with research aspect in PROCESSING and PUBLICATION  of personal data.
+Processing:- The first principle require that personal data are processed in a lawfull , fair and  transparent manner in relation to data subject . Transparncy implies that any information and communication concerning the processing of personal data must be accessible an easy to understand . Also cleared and plain language needs to be used .MORE specifically this principle ensure datasubject receive information onthe identity of controllers and purposes ofthe processing of personalb data.
+Publication :- Sharing personal data should be through managed processes with access and usage controls to protect from re-identification. There are too many risk releated to GDPR sometimes mention is made of vulenerable natural persons in  the content of GDPR examples: Babies and Young children , Pregnant  women , Elderly , People with mental disordeers , asylum seekers, People with disabilities , Sick and Patients. These are also often person who are legally incompetent , Person who can not give their cosent, or person who may suffer very adverse consequence ,if  their personal data were to become publically available. The processing of personal data of vulenrable persons can give rise to risk analysis .Collecting data from non EU data sources and sharing data with non EU researcher are also risky in privacy terms of data. Data can be protected by pseudonymization , data minimization ,cryptography , procedure for exercising fundamental rights (access , consent).we have a lawful basis for the data processing due to this we can process our personal data which include data such as internal protocol (IP) addresses and data from 'smart meters' monitoring energy usage by addresses linked to identifiable persons.
+This paper includes the question that 'why we need tables ' we need tables for reproduction of commits per time period , for re-use of identity merging and relatioinship between message and time of the day.
+Anonymizing Public Dataset :-  Data masking - hiding data with altered values we can create a mirror version of a database and apply modification techniques such as character shuffling , encryption , and word or character substitution.
+We can easily used the ananymized data re-identifying it but there are issues like:
+1) Anonymize by hashing never publushed
+2) Deliver the HMAC key to trusted parties
+3) Trusted parties hash identities , HMAC (hash) , re-assign identities
+4) If you dont have the identity you can not hash.
+
+No personal data can be processed example web form , anonymous dataset from third party. Raw data need special protection .
+
+###### **CONCLUSION**
+The aim of privacy enhancing technologies is to protect and preserve the privacy of individual with so many regulation to follow, it can be difficult to keep track of what level of data privacy you need to achieve for your different database. By building processes, data modeling and automating as much as possible, you can make it easier to handel the comlexity of different regulatioins. Managing consent need to document and archieve and also able of producing evidence consent management application must be ethically robust, secure, manage ,document, evidence and model consent process.
+
+➡️ Archieve personal data only as needed for research purpose .
+
+➡️ Delete it as soon as possible.
+
+➡️ Beware of backups and data in clouds storage.
+
+➡️ we can keep personal data identifinitly if it is only for : archieving purposes in public intrest.
+Scientific or historical research purpose 
+Statistical purposes 
+Tge GDPR establishes special safe guards for children in relation to 'information society services'. A sboard team covering all internet services providers including social media platforms.These include a requirements for verified parental consent in respect of information society services offered directly to children aged under 16 .Individual Member State may provide for this threshold to be lowered to 13.
 ****
